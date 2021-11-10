@@ -33,6 +33,10 @@ class Hero:
       total_armor += armor.block()
     return total_armor
 
+  def add_weapon(self, weapon):
+    self.abilities.append(weapon)
+
+
   def attack(self):
     total_damage = 0
     for ability in self.abilities:
