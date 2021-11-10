@@ -52,6 +52,12 @@ class Hero:
       self.current_health = self.starting_health - remaining_damage
       return self.current_health
 
+  def add_kill(self, num_kills):
+    self.kills += num_kills
+
+  def add_death(self, num_deaths):
+    self.deaths += num_deaths
+
   def is_alive(self):
     if self.current_health <= 0:
       return False
